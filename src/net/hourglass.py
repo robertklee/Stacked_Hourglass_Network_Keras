@@ -66,7 +66,8 @@ class HourglassNet(object):
                                             rot_flag=True, scale_flag=True, flip_flag=True)
 
         model_dir = os.path.dirname(os.path.abspath(model_json))
-        print model_dir, model_json
+        print(model_dir)
+        print(model_json)
         csvlogger = CSVLogger(
             os.path.join(model_dir, "csv_train_" + str(datetime.datetime.now().strftime('%H:%M')) + ".csv"))
 
